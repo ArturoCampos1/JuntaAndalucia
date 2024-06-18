@@ -1,0 +1,154 @@
+body, h1, h2, h3, h4, p, label, button, span {
+    font-family: Arial, sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content{
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 3%;
+}
+
+button {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #08843c;
+   }
+   
+   button, button span {
+    transition: 200ms;
+   }
+   
+   button .icon {
+    position: absolute;
+    transform: translateX(90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   button .icon {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   button:hover .text {
+    color: transparent;
+   }
+   
+   button:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+   }
+
+   button:active .icon {
+    transform: scale(0.8);
+   }
+
+.leyendo{
+    width: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 600px;
+    margin: auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #08843c;
+    color: white;
+    padding: 0.7em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #065f29;
+}
+
+.flecha{
+    width: 20px;
+}
+
+.infoAdicional {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.masInfo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.toggle {
+    display: none;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #08843c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.label .flecha {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.extra-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.toggle:checked + .label + .extra-content {
+    display: block;
+}
+
+.toggle:checked + .label {
+    background-color: #08843c;
+}
